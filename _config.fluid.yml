@@ -1,6 +1,6 @@
 #---------------------------
 # Hexo Theme Fluid   # Hexo主题流体
-# Author: Fluid-dev   #作者：Fluid-dev
+# Author: Fluid-dev   #作者：Fluid-dev#作者：Fluid-dev #
 # Github: https://github.com/fluid-dev/hexo-theme-fluid
 #
 # 配置指南: https://hexo.fluid-dev.com/docs/guide/
@@ -9,7 +9,10 @@
 # Guide: https://hexo.fluid-dev.com/docs/en/guide/#指南：https://hexo.fluid-dev.com/docs/en/guide/
 # You can get more detailed help from the guide你可以从指南中得到更详细的帮助
 #---------------------------
-
+deploy   部署:
+type: git   类型:git
+repo: https://github.com/klshuaige7klshuaige7.github.io.git回购:https://github.com/klshuaige7klshuaige7.github.io.git
+branch: main   主要分支:
 
 #---------------------------
 # 全局
@@ -30,34 +33,34 @@ tab_title_separator: " - "
 
 # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
 # Force all links to be HTTPS (applicable to HTTP mixed error)#强制所有链接为HTTPS（适用于HTTP混合错误）
-force_https: false   假
+force_https: false   假Force_https: false   假
 
 # 代码块的增强配置
 # Enhancements to code blocks增强代码块
-code:
+code   代码:
   # 是否开启复制代码的按钮
-  # Enable copy code button
-  copy_btn: true
+  #启用复制代码按钮# Enable copy code button#启用复制代码按钮
+  copy_btn: true   真正的
 
   # 代码语言
-  # Code language
-  language:
-    enable: true
-    default: "TEXT"
+     #代码语言# Code language   #代码语言
+  language   语言:
+    enable   启用: true   真正的
+    default   默认的: "TEXT"   “文本”
 
   # 代码高亮
-  # Code highlight
-  highlight:
-    enable: true
+     #代码高亮# Code highlight   #代码高亮
+  highlight   突出:
+    enable   启用: true   真正的
 
     # 代码块是否显示行号
-    # If true, the code block display line numbers
-    line_number: true
+    #如果为true，代码块显示行号# If true, the code block display line numbers#如果为true，代码块显示行号
+    line_number: true   真正的
 
     # 实现高亮的库，对应下面的设置
-    # Highlight library
-    # Options: highlightjs | prismjs
-    lib: "highlightjs"
+       #高亮库# Highlight library   #高亮库
+    #选项：highlightjs | prismjs# Options: highlightjs | prismjs#选项：highlightjs | prismjs
+    lib   自由: "highlightjs"   “highlightjs”
 
     highlightjs:
       # 在链接中挑选 style 填入
