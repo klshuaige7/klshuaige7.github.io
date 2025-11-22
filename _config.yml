@@ -10,9 +10,9 @@
 # You can get more detailed help from the guide你可以从指南中得到更详细的帮助
 #---------------------------
 deploy   部署:
-type: git
-repo: https://github.com/klshuaige7klshuaige7.github.io.git
-branch: main
+type   类型: git   类型:git
+repo: https回购:https://github.com/klshuaige7klshuaige7.github.io.git://github.com/klshuaige7klshuaige7.github.io.git
+branch: main   主要分支:
 #---------------------------
 # 全局
 # Global   #全球
@@ -28,11 +28,11 @@ apple_touch_icon: /img/fluid.png
 
 # 浏览器标签页中的标题分隔符，效果：文章名 - 站点名
 # Title separator in browser tab, eg: article - site#在浏览器选项卡中的标题分隔符，例如：article - site
-tab_title_separator: " - "Tab_title_separator: “ - ”
+tab_title_separator: " - "Tab_title_separatortab_title_separator: “ - ”: “ - ”
 
 # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
 # Force all links to be HTTPS (applicable to HTTP mixed error)#强制所有链接为HTTPS（适用于HTTP混合错误）
-force_https: false   假Force_https: false   假
+force_https: false   假Force_httpsforce_https: false: false   假
 
 # 代码块的增强配置
 # Enhancements to code blocks增强代码块
