@@ -1,39 +1,39 @@
 #---------------------------
-# Hexo Theme Fluid
-# Author: Fluid-dev
+# Hexo Theme Fluid   # Hexo主题流体
+# Author: Fluid-dev   #作者：Fluid-dev
 # Github: https://github.com/fluid-dev/hexo-theme-fluid
 #
 # 配置指南: https://hexo.fluid-dev.com/docs/guide/
 # 你可以从指南中获得更详细的说明
 #
-# Guide: https://hexo.fluid-dev.com/docs/en/guide/
-# You can get more detailed help from the guide
+# Guide: https://hexo.fluid-dev.com/docs/en/guide/#指南：https://hexo.fluid-dev.com/docs/en/guide/
+# You can get more detailed help from the guide你可以从指南中得到更详细的帮助
 #---------------------------
 
 
 #---------------------------
 # 全局
-# Global
+# Global   #全球
 #---------------------------
 
 # 用于浏览器标签的图标
-# Icon for browser tab
-favicon: /img/fluid.png
+# Icon for browser tab#浏览器标签的图标
+favicon   的图标: /img/fluid.png   标识:/ img / fluid.png
 
 # 用于苹果设备的图标
-# Icon for Apple touch
+# Icon for Apple touch#苹果触摸的图标
 apple_touch_icon: /img/fluid.png
 
 # 浏览器标签页中的标题分隔符，效果：文章名 - 站点名
-# Title separator in browser tab, eg: article - site
+# Title separator in browser tab, eg: article - site#在浏览器选项卡中的标题分隔符，例如：article - site
 tab_title_separator: " - "
 
 # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
-# Force all links to be HTTPS (applicable to HTTP mixed error)
-force_https: false
+# Force all links to be HTTPS (applicable to HTTP mixed error)#强制所有链接为HTTPS（适用于HTTP混合错误）
+force_https: false   假
 
 # 代码块的增强配置
-# Enhancements to code blocks
+# Enhancements to code blocks增强代码块
 code:
   # 是否开启复制代码的按钮
   # Enable copy code button
