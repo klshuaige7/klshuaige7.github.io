@@ -1,0 +1,95 @@
+# Hexo 核心配置文件（适配 Fluid 主题 + GitHub Pages 部署）
+# 文档参考：https://hexo.io/docs/configuration.html
+
+# ===================== 网站基础信息（可自定义修改）=====================
+Site:
+  title: 你的博客标题  # 例如：技术笔记 | 我的 Hexo 博客
+  subtitle: ''  # 博客副标题（可选）
+  description: 分享技术、生活感悟...  # 博客描述（用于搜索引擎）
+  keywords: Hexo, Fluid, 技术博客, 前端  # 关键词（逗号分隔）
+  author: 你的名字  # 作者名（例如：klshuaige）
+  language: zh-CN  # 语言（中文：zh-CN，英文：en）
+  timezone: Asia/Shanghai  # 时区（中国时区：Asia/Shanghai）
+
+# ===================== URL 配置（关键！必须修改）=====================
+URL:
+  # 改为你的 GitHub Pages 域名（或自定义域名）
+  url: https://klshuaige7.github.io  # 示例：https://你的用户名.github.io
+  root: /  # 根路径（默认无需修改）
+  permalink: :year/:month/:day/:title/  # 文章链接格式（默认即可）
+  permalink_defaults:
+    lang: zh-CN
+
+# ===================== 目录配置（默认无需修改）=====================
+Directory:
+  source_dir: source  # 文章/页面源文件目录
+  public_dir: public  # 生成的静态文件目录
+  tag_dir: tags  # 标签页目录
+  archive_dir: archives  # 归档页目录
+  category_dir: categories  # 分类页目录
+  code_dir: downloads/code  # 代码下载目录
+  i18n_dir: :lang  # 国际化目录
+  skip_render:  # 跳过渲染的文件（默认无需修改）
+
+# ===================== 写作配置（默认无需修改）=====================
+Writing:
+  new_post_name: :title.md  # 新文章文件名格式
+  default_layout: post  # 默认布局（文章：post，页面：page）
+  titlecase: false  # 是否将标题转为首字母大写
+  external_link:
+    enable: true  # 外部链接在新标签打开
+    field: site  # 应用范围（全站）
+    exclude: ''
+  filename_case: 0  # 文件名大小写（0：默认，1：小写，2：大写）
+  render_drafts: false  # 是否渲染草稿
+  post_asset_folder: false  # 是否为文章创建单独资产文件夹
+  relative_link: false  # 是否使用相对路径
+  future: true  # 是否显示未来发布的文章
+  highlight:   亮点:
+    enable: true  # 代码高亮
+    line_number: true  # 显示行号
+    auto_detect: false  # 自动检测语言
+    tab_replace: ''  # 制表符替换为空格（默认空）
+    wrap: true  # 是否换行
+    hljs: false  # 是否使用 highlight.js
+
+# ===================== 首页配置（默认无需修改）=====================
+Home page setting:
+  index_generator:
+    path: ''  # 首页路径（默认根目录）
+    per_page: 10  # 每页显示文章数
+    order_by: -date  # 排序方式（按日期倒序）
+
+# ===================== 分类与标签（默认无需修改）=====================
+Category & Tag:
+  default_category: uncategorized  # 默认分类（未分类）
+  category_map:  # 分类别名（可选）
+  tag_map:  # 标签别名（可选）
+
+# ===================== 日期格式（默认无需修改）=====================
+Date / Time format:
+  date_format: YYYY-MM-DD  # 日期格式
+  time_format: HH:mm:ss  # 时间格式
+  updated_option: 'mtime'  # 更新时间选项（文件修改时间）
+
+# ===================== 分页配置（默认无需修改）=====================
+Pagination:
+  per_page: 10  # 每页文章数（0 禁用分页）
+  pagination_dir: page  # 分页目录名
+
+# ===================== 扩展配置（主题 + 插件）=====================
+Extensions:
+  # 主题配置（已设置为 Fluid，确保已安装）
+  theme: fluid  # 必须与主题文件夹名一致（小写 fluid）
+  # 插件（已包含部署插件，无需额外安装）
+  plugins:
+    - hexo-deployer-git
+
+# ===================== 部署配置（关键！已适配你的 GitHub 仓库）=====================
+Deployment:
+  deploy:   部署:
+    type: git  # 部署类型（Git）
+    # 你的 GitHub 博客仓库地址（替换为自己的，已填你的仓库）
+    repo: https://github.com/klshuaige7/klshuaige7.github.io.git
+    branch: main  # 部署分支（GitHub Pages 推荐 main 分支）
+    message: "Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}"  # 提交信息（自动带时间戳）
