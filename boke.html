@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="server.js">
+    <link rel="stylesheet" href="js/js/main.js">
+</head>
+<body>
+    <form id="contact-form" action="contact.php" method="POST"></form>
+    <header>
+        <div class="container">
+            <h1 class="logo">我的博客</h1>
+        <nav>
+    <ul>
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#posts">文章</a></li>
+        <li><a href="#contact">联系</a></li>
+    </ul>
+</nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>欢迎来到我的博客</h2>
+            <p>记录生活、分享技术、思考人生</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <img src="1.png" alt="图片" class="avatar">
+                <div class="bio">
+                    <p>我是一名热爱技术与写作的开发者。在这里，我会分享我的技术心得、生活感悟以及一些有趣的想法。</p>
+                    <p>专注于前端开发、用户体验设计和技术创新。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  <section id="skills" class="skills">
+    <div class="container">
+        <h2>我的技能</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>前端开发</h3>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>HTML/CSS</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 95%; background: linear-gradient(90deg, #4a6cf7, #6a11cb);"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 90%; background: linear-gradient(90deg, #ff6b6b, #ffa502);"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>React</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 85%; background: linear-gradient(90deg, #1dd1a1, #10ac84);"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>后端开发</h3>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Node.js</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 80%; background: linear-gradient(90deg, #f368e0, #ff9ff3);"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-fill" style="width: 75%; background: linear-gradient(90deg, #0abde3, #48dbfb);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tech-icons">
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <span>💻</span>
+                </div>
+                <p>Web开发</p>
+            </div>
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <span>📱</span>
+                </div>
+                <p>移动端</p>
+            </div>
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <span>☁️</span>
+                </div>
+                <p>云计算</p>
+            </div>
+            <div class="icon-item">
+                <div class="icon-circle">
+                    <span>🔒</span>
+                </div>
+                <p>安全</p>
+            </div>
+        </div>
+
+    <section id="posts" class="posts">
+        <div class="container">
+            <h2>最新文章</h2>
+            <div class="post-grid">
+                <article class="post-card">
+                    <img src="4.png" alt="文章封面">
+                    <div class="post-content">
+                        <h3>如何构建响应式网站</h3>
+                        <p class="post-meta">发布于 2023年10月1日</p>
+                        <p>在这篇文章中，我将分享构建现代化响应式网站的最佳实践...</p>
+                        <a href="posts/post1.html" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <img src="2.png" alt="文章封面">
+                    <div class="post-content">
+                        <h3>JavaScript ES6新特性详解</h3>
+                        <p class="post-meta">发布于 2023年9月20日</p>
+                        <p>ES6为JavaScript带来了许多强大的新特性，让我们来看看这些改变...</p>
+                        <a href="posts/post2.html" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <img src="3.png" alt="文章封面">
+                    <div class="post-content">
+                        <h3>CSS Grid布局完全指南</h3>
+                        <p class="post-meta">发布于 2023年9月5日</p>
+                        <p>CSS Grid是现代网页布局的强大工具，本文将详细介绍其使用方法...</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+   <section id="contact" class="contact">
+    <div class="container glass-container">
+        <h2>联系我</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">邮箱</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">留言</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">发送</button>
+        </form>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 我的个人博客. 保留所有权利.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../第二章/js/js/main.js"></script>
+</body>
+</html>
